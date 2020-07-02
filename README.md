@@ -1,2 +1,2 @@
 # MinesweeperV2
-A stylised version of the classic minesweeper game build in HTML, CSS and JS(jQuery)
+A stylised version of the classic minesweeper game built in HTML, CSS and JS(jQuery).
