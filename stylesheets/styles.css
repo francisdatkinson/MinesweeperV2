@@ -1,0 +1,265 @@
+body {
+	margin: 0px;
+	font-family: "Arial", sans-serif;
+	background-image: url(../img/logo.png);
+	background-size: 20%;
+	background-repeat: no-repeat;
+	background-position: 1% 2%;
+}
+.siteWrapper {
+	width: 320px;
+	margin: 1% auto;
+}
+.wrapper, .settings {
+	width: 300px;
+	border: 10px solid rgba(255,255,255);
+}
+.box {
+	width: 10%;
+	float: left;
+	background-color: rgb(0,200,200);
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+.box:hover {
+	opacity: 0.5;
+}
+.box:active {
+	opacity: 0;
+}
+.footer {
+	/*height: 40px;*/
+	width: 100%;
+	clear: both;
+	border-top: 10px solid rgba(255,255,255);
+}
+.button {
+	height: 20px;
+	width: 280px;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.5);
+	cursor: pointer;
+	clear: both;
+}
+.button:hover {
+	background-color: rgba(255,255,255,0);
+}
+.button p {
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+}
+.revealed {
+	opacity: 0;
+}
+.flagged {
+	filter: invert(100);
+}
+.adjacent {
+	text-align: center;
+	font-size: 15px;
+	margin: 7.5px 0px 0px 0px;
+	opacity: 0.8;
+}
+p {
+	user-select: none;
+}
+.gameOver {
+	background-color: transparent;
+	transition: all 2s ease;
+}
+.exploded {
+	border-radius: 100px;
+
+}
+.clock, .clock2, .flags {
+	height: 50px;
+	width: 168px;
+	margin: none;
+	padding: 5px 0px 5px 2px;
+	float: left;
+	transition: all 0.5s ease-in-out;
+}
+.flags {
+	width: 128px;
+	float: right;
+}
+.numbers {
+	width: 30px;
+	float: left;
+	margin: 0px 2.5px 0px 2.5px;
+}
+.flags .numbers {
+	float: left;
+	margin: 0px 0px 0px 4px;
+}
+.smallBox {
+	width: 10px;
+	height: 10px;
+	float: left;
+	background-color: green;
+	transition: all 0.2s linear;
+}
+.word {
+	width: 100px;
+	height: 100%;
+	margin: auto;
+}
+.letter {
+	width: 16px;
+	float: left;
+	margin: 0px 2px 0px 2px;
+}
+.flags .pixel, .settingsButton .pixel {
+	width: 2px;
+	height: 2px;
+}
+.flags .letter, .settingsButton .letter {
+	width: 8px;
+	float: right;
+	/*position: relative;
+	top: 40px;*/
+	margin: 0px 1px 0px 1px;
+}
+.flags .word, .settingsButton .word {
+	width: 54px;
+	float: left;
+	text-align: center;
+}
+.settingsButton .word {
+	width: 50px;
+	margin: 5px 25px 0px 25px;
+}
+.settingsButton .letter {
+	float: left;
+	margin-top: 0px;
+}
+.settingsButton .pixel {
+	margin-top: 0px;
+}
+.pixel {
+	width: 4px;
+	height: 4px;
+	float: left;
+}
+.decimal {
+	position: relative;
+	top: 40px;
+	transition: all 0s linear;
+}
+.smallNumbers {
+	width: 23px;
+	position: relative;
+	top: 12.5px;
+	margin: 0px 0px 0px 1.75px;
+}
+.smallNumbers .smallBox {
+	width: 7.5px;
+	height: 7.5px;
+	transition: all 0.05s linear;
+}
+#numFive .smallBox {
+	transition: all 0s linear;
+}
+
+.clock2 {
+	display: none;
+}
+.background-image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 90%;
+}
+.settingsButton {
+	background-image: url("../img/instructions.png");
+	width: 120px;
+	height: 20px;
+	margin: auto;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+.down {
+	height: 30px;
+	opacity: 0.8;
+}
+.down .word {
+	transform: translateY(10px);
+}
+.settings {
+	width: 300px;
+	border: solid 10px;
+	position: absolute;
+	top: 2.1%;
+	background-color: rgba(255,255,255,0.6);
+	display: none;
+}
+.settings p {
+	color: rgba(0,0,0,0.7);
+}
+.settingsHead {
+	height: 60px;
+	width: 100%;
+	font-size: 35px;
+	border-bottom: solid 10px rgba(255,255,255);
+}
+.settingsHead p {
+	margin-top: 20px;
+}
+p {
+	margin: 0px;
+	text-align: center;
+	color: rgba(255,255,255, 0.8);
+}
+.grid p {
+	color: rgba(0,0,0,0.8);
+}
+.winner {
+	width: 300px;
+	height: 100px;
+	background-color: red;
+	position: absolute;
+	top: 0px;
+	display: none;
+	opacity: 0;
+	transition: all 0.5s ease;
+	border: solid 10px rgba(255,255,255,1);
+	background-image: url(../img/winner.png);
+	background-size: 90%;
+}
+.winner p {
+	font-size: 80px;
+	color: rgba(255,255,255,0.7);
+}
+.counter {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.settingsBody p {
+	text-align: left;
+	padding: 10px;
+}
+hr {
+	margin: 0px;
+	border: 0px;
+	height: 3px;
+	background-color: rgba(255,255,255,1);
+}
+.settingsBody span {
+	padding: 1px 5px 1px 5px;
+	color: rgba(255,255,255,0.8);
+}
+
+.copy {
+	position: fixed;
+	bottom: 5px;
+	right: 22px;
+	padding: 0px;
+	margin: 0px;
+	z-index: 300;
+	cursor: pointer;
+}
+.copyText {
+	color: rgba(255,255,255, 0.6);
+	font-size: 15px;
+}

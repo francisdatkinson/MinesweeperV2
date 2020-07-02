@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minesweeper</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="scripts/global.js"></script>
+</head>
+<body>
+	<div class="siteWrapper">
+		<div class="wrapper">
+			<div class="grid">
+			</div>
+			<div class="footer">
+				<div class="clock">
+					<div class="numbers" id="numOne">
+					</div>
+					<div class="numbers" id="numTwo">
+					</div>
+					<div class="numbers" id="numThree">
+					</div>
+					<div class="decimal smallBox"></div>
+					<div class="numbers smallNumbers" id="numFour">
+					</div>
+					<div class="numbers smallNumbers" id="numFive">
+					</div>
+				</div>
+				<div class="clock2">
+					<div class="numbers" id="numOne">
+					</div>
+					<div class="numbers" id="numTwo">
+					</div>
+					<div class="numbers" id="numThree">
+					</div>
+					<div class="decimal smallBox"></div>
+					<div class="numbers smallNumbers" id="numFour">
+					</div>
+					<div class="numbers smallNumbers" id="numFive">
+					</div>
+				</div>
+				<div class="flags">
+					<div class="word">
+						<div class="letter letterS" id="letterR">
+						</div>
+						<div class="letter letterG" id="letterE">
+						</div>
+						<div class="letter letterA" id="letterS">
+						</div>
+						<div class="letter letterL" id="letterE">
+						</div>
+						<div class="letter letterF" id="letterT">
+						</div>
+					</div>
+					<div class="numbers" id="flagNumOne">
+					</div>
+					<div class="numbers" id="flagNumTwo">
+					</div>
+				</div>
+				<div class="button" id="reset">
+					<div class="word">
+						<div class="letter letterR" id="letterR">
+						</div>
+						<div class="letter letterE" id="letterE">
+						</div>
+						<div class="letter letterS" id="letterS">
+						</div>
+						<div class="letter letterE" id="letterE">
+						</div>
+						<div class="letter letterT" id="letterT">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="settingsButton background-image">
+		</div>
+		<div class="settings">
+			<div class="settingsHead">
+				<p>Instructions</p>
+			</div>
+			<div class="settingsBody">
+				<p>Identify all mines as you can as quickly as possible!</p>
+				<hr>
+				<p>Hold <span>shift</span> while clicking a square to 'flag' the location of a mine (this will highlight the cell in a different colour, and prevent you from accidentally clicking it).</p>
+				<hr>
+				<p>Don't click on any squares that may contain a mine; revealing a mine will result in total annihilation!</p>
+				<hr>
+				<p>The grid will only be safe once all of the mines have been correctly flagged.</p>
+				<hr>
+			</div>
+		</div>
+		<div class="winner background-image">
+		</div>
+	</div>
+	<div class="copy">
+		<p class="copyText">&copy; Francis Atkinson <span class="date"></span></p>
+	</div>
+</body>
+</html>
